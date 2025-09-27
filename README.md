@@ -1,31 +1,26 @@
 # Web-Scraper
 
 ## Objective
-[Brief Objective - Remove this afterwards]
+My primary objective when starting this project was to gain a basic understanding of what it entails to extract data from a website and store that data effectively. This was achieved through the use of the Python library Scrapy for data extraction, MongoDB for data storage and organization, and a controlled website serving as our target. 
+<br/>
+<a href="https://realpython.com/web-scraping-with-scrapy-and-mongodb/#prepare-the-scraper-scaffolding"> Link to Original Project Guide</a>
 
 
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Setting up and working with different Python virtual environments
+- Ability to recognize CSS selectors to identify desired web content
+- MongoDB integration for simplified data management
+- Data pipeline design from extraction -> transformation -> storage
+- Ethical data scraping practices like respecting robots.txt files
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Scrapy for an efficient all-in-one data scraping framework
+- MongoDB for a scalable and easy-to-work-with database for storing and querying scraped data.
+- PyMongo as a way to interact with my MongoDB database from Python programs.
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Key Moments
 
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
+Rather than recounting every step I took to complete this project, I will review some of the key learning moments I experienced throughout the process.
