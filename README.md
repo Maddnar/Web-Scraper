@@ -116,4 +116,49 @@ Next, use the scrapy command to run your spider:
 ```powershell
 PS C:\\VSC\books\books> scrapy crawl book
 ```
-For a while, nothing will appear in your console, but eventually your console will reset, meaning your spider has finished crawling the website. To verify that your spider was successful in extracting the correct information, you can check your MongoDB database: 
+For a while, nothing will appear in your console, but eventually, your console will reset, indicating that your spider has finished crawling the website. To verify that your spider was successful in extracting the correct information, you can check your MongoDB database: 
+
+```powershell
+PS C:\Users\Miguel> mongosh
+Current Mongosh Log ID: 68dc5e6e5e8e477e06cebea3
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8
+Using MongoDB:          8.2.0
+Using Mongosh:          2.5.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-09-26T11:23:42.940-07:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show collections
+
+test> use books_db
+switched to db books_db
+books_db> show collections
+
+books_db> exit
+PS C:\Users\Miguel> mongosh
+Current Mongosh Log ID: 68dc5e93def1166da9cebea3
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8
+Using MongoDB:          8.2.0
+Using Mongosh:          2.5.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-09-26T11:23:42.940-07:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> use books_db
+switched to db books_db
+books_db> db.books.countDocuments()
+1000
+```
+Here we can see that our scraper collected 1000 unique entries for each book on our test website. A successful scrape!
+
+## Review
+
+This project was both fun and highly informative. Through completing this project, I achieved my goal of extracting and storing structured data from a website. Scrapy is a potent tool for this kind of project, providing much of the scaffolding needed to scrape data from the internet effectively. That being said, I wish the project guide I followed had allowed me to fill in the gaps in the code that Scrapy had already provided. Overall, this experience strengthened both my technical skills and my understanding of web scraping best practices, providing a strong foundation for tackling more complex data-related projects in the future. 
