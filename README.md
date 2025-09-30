@@ -21,6 +21,19 @@ My primary objective when starting this project was to gain a basic understandin
 - MongoDB for a scalable and easy-to-work-with database for storing and querying scraped data.
 - PyMongo as a way to interact with my MongoDB database from Python programs.
 
-## Key Moments
+## Workflow Outline
 
-Rather than recounting every step I took to complete this project, I will review some of the key learning moments I experienced throughout the process.
+### Creating the Scrapy Project
+The first step in the process is to create the Scrapy project, which sets up a directory with our project name, as pictured below.
+
+<img width="288" height="303" alt="image" src="https://github.com/user-attachments/assets/aeaeeeb6-3d2c-4b4e-b691-34503718e44b" />
+<br/>
+
+- books/ is the root directory, where our entire project is housed.
+- books/spiders/ is where we will build and define the guidelines of our web crawler.
+- books/items.py is where we will tell the scraper what kind of information we want to collect, as well as how to organize it.
+- books/middlewares.py is where you can add extra rules or tools that change how the scraper behaves while it runs.
+- books/pipelines.py is where scraped data gets cleaned up, organized, and prepared before being stored.
+- books/settings.py is where we can adjust settings like speed, limits, or other options to fine-tune how the scraper runs.
+
+### Building the Spider
